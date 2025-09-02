@@ -8,7 +8,7 @@ Se pide implementar la funcionalidad del archivo **.h** provisto según la descr
 
 Adicionalmente se pide la implementación de ***main.c*** que dado un archivo de pokedex y otros parámetros, carga los datos y ejecuta la operación pedida.
 
-Por último, es obligatorio implementar ***pruebas_alumno.c*** con pruebas de la funcionalidad de ***pokedex.h***.
+Por último, es obligatorio implementar ***pruebas_alumno.c*** con pruebas de la funcionalidad de ***tp1.h***.
 
 ## Estructura del archivo
 
