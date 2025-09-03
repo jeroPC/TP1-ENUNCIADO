@@ -1,6 +1,5 @@
 #ifndef TP1_H_
 #define TP1_H_
-#include <cstddef>
 #include <stdlib.h>
 #include <stdbool.h>
 
