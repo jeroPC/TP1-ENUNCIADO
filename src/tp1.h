@@ -91,4 +91,9 @@ struct pokemon *tp1_buscar_id(tp1_t *tp, int id);
 size_t tp1_con_cada_pokemon(tp1_t *un_tp, bool (*f)(struct pokemon *, void *),
 			    void *extra);
 
+/**
+ * Libera toda la memoria asociada al tp1
+ */
+void tp1_destruir(tp1_t *tp1);
+
 #endif // TP1_H_
