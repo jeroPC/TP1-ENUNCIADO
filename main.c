@@ -4,6 +4,7 @@
 int main(int argc, char *argv[])
 {
 	//leer un archivo según el parámetro y hacer lo que corresponda según el enunciado
-
+	(void)argc;
+    (void)argv;
 	return 0;
 }
