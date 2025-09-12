@@ -1,4 +1,3 @@
-# Makefile for TP1-ENUNCIADO
 CC      ?= gcc
 CFLAGS  ?= -std=c11 -Wall -Wextra -Werror -pedantic -O2 -g
 INCLUDES = -Isrc -I.
@@ -6,11 +5,11 @@ LDFLAGS ?=
 OBJDIR  = build
 
 TARGET  = tp1
-SRC     = main.c tp1.c
+SRC     = main.c src/tp1.c
 OBJS    = $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
 
 TEST_TARGET = pruebas
-TEST_SRC    = pruebas_alumno.c tp1.c
+TEST_SRC    = pruebas_alumno.c src/tp1.c
 TEST_OBJS   = $(addprefix $(OBJDIR)/,$(TEST_SRC:.c=.o))
 
 .PHONY: all clean run test run-tests valgrind help
@@ -21,6 +20,7 @@ $(OBJDIR):
 	@mkdir -p $(OBJDIR)
 
 $(OBJDIR)/%.o: %.c | $(OBJDIR)
+	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(TARGET): $(OBJS)
