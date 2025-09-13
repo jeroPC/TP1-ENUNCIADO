@@ -4,23 +4,23 @@
 #include <stdlib.h>
 
 enum tipo_pokemon {
-    TIPO_ELEC,
-    TIPO_FUEG,
-    TIPO_PLAN,
-    TIPO_AGUA,
-    TIPO_NORM,
-    TIPO_FANT,
-    TIPO_PSI,
-    TIPO_LUCH
+	TIPO_ELEC,
+	TIPO_FUEG,
+	TIPO_PLAN,
+	TIPO_AGUA,
+	TIPO_NORM,
+	TIPO_FANT,
+	TIPO_PSI,
+	TIPO_LUCH
 };
 
 struct pokemon {
-    int id;
-    char *nombre;
-    enum tipo_pokemon tipo;
-    int ataque;
-    int defensa;
-    int velocidad;
+	int id;
+	char *nombre;
+	enum tipo_pokemon tipo;
+	int ataque;
+	int defensa;
+	int velocidad;
 };
 
 typedef struct tp1 tp1_t;
@@ -90,7 +90,8 @@ struct pokemon *tp1_buscar_id(tp1_t *tp, int id);
  *
  * Devuelve la cantidad de pokemones sobre los cuales se aplicó la función f.
  */
-size_t tp1_con_cada_pokemon(tp1_t *un_tp, bool (*f)(struct pokemon *, void *), void *extra);
+size_t tp1_con_cada_pokemon(tp1_t *un_tp, bool (*f)(struct pokemon *, void *),
+			    void *extra);
 
 /**
  * Libera toda la memoria asociada al tp1
