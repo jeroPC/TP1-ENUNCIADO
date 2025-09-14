@@ -74,7 +74,7 @@ make -C TP1-ENUNCIADO clean
 ### 1. 'tp1_leer_archivo'
 
 Es la función que lee el CSV, parsea y almacena los pokemones en memoria dinámica.  
-El flujo es: abrir archivo → leer línea → parsear → crear `struct pokemon` → agregar al vector (con `realloc` si es necesario).
+El flujo es: abrir archivo → leer línea → parsear → crear 'struct pokemon' → agregar al vector (con 'realloc' si es necesario).
 
 <div align="center">
 <img width="70%" src="img/LEER_ARCHIVO.svg">
