@@ -147,6 +147,10 @@ Su complejidad es O(n + m), donde n y m son las cantidades de pokemones en cada 
 Las funciones 'tp1_union', 'tp1_interseccion' y 'tp1_diferencia' están estrechamente relacionadas:  
 todas utilizan la misma función interna para combinar los tp1, diferenciándose únicamente por el criterio de selección, que se pasa como un puntero a función. Esto permite reutilizar el código y cambiar solo la lógica de qué pokemones agregar en cada caso.
 
+<div align="center">
+<img width="70%" src="img/punterosafuncion.svg">
+</div>
+
 Al principio, implementar las funciones de unión, intersección y diferencia me resultó desafiante, ya que mis primeras versiones recorrían las colecciones de forma anidada, resultando en una complejidad O(n^2). Notaba que intersección y diferencia compartían cierta lógica, pero unión parecía distinta, por lo que inicialmente las implementé por separado.
 
 Sin embargo, en día de la clase de consultas, me di cuenta de que todas podían resolverse eficientemente si ambas colecciones estaban ordenadas por id. Esto me permitió inspirarme en la etapa de "merge" de mergesort y crear una función genérica interna (combinar_tp1) que recorre ambas listas en paralelo en O(n + m), aplicando un criterio de selección pasado como puntero a función. Así, logré unificar las tres operaciones en una sola función eficiente y reutilizable.
