@@ -78,7 +78,7 @@ make -C TP1-ENUNCIADO clean
 
   
 <div align="center">
-<img width="70%" src="TP1-ENUNCIADO/img/LEER_ARCHIVO.svg">
+<img width="70%" src="img/LEER_ARCHIVO.svg">
 </div>
    
     La función tp1_leer_archivo tiene complejidad O(n²) en el peor caso, ya que por cada pokémon leído se verifica si su id está repetido recorriendo toda la colección cargada hasta el momento.
@@ -167,8 +167,5 @@ make -C TP1-ENUNCIADO clean
 
 
 
-<div align="center">
-<img width="70%" src="img/diagrama2.svg">
-</div>
 
 ---
