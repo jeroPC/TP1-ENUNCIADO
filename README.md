@@ -46,10 +46,15 @@ make -C TP1-ENUNCIADO clean
 
 ##  Funcionamiento
 
-## flujo general del programa : 
-    el programa recibe como parametro un archivo CSV con los datos de los pokemones, lee el archivo linea por linea , parsea cada linea y almacena los datos en un vector dinamico de estructuras pokemon_t , luego segun los argumentos recibidos , realiza busquedas, uniones, intersecciones,etc.
 
--insertar imagen de vector dinamico siendo llenaod , explicandoi en una partecita el uso de malloc 
+## Flujo general del programa
+
+El programa recibe como parámetro un archivo CSV con los datos de los pokemones. Lee el archivo línea por línea, parsea cada línea y almacena los datos en un vector dinámico de estructuras 'pokemon'.
+
+Para gestionar el vector dinámico, se utiliza memoria dinámica con 'malloc' y 'realloc'. Inicialmente, se reserva memoria para una cierta cantidad de pokemones. Si el vector se llena, se utiliza 'realloc' para agrandar el espacio disponible y poder seguir agregando nuevos pokemones. Esto permite que el programa pueda manejar cualquier cantidad de datos sin desperdiciar memoria.
+
+Luego, según los argumentos recibidos por línea de comandos, el programa realiza búsquedas, uniones, intersecciones, diferencias y otras operaciones sobre la colección cargada.
+
 
 ### Estructuras
 
