@@ -148,7 +148,7 @@ Las funciones 'tp1_union', 'tp1_interseccion' y 'tp1_diferencia' están estrecha
 todas utilizan la misma función interna para combinar los tp1, diferenciándose únicamente por el criterio de selección, que se pasa como un puntero a función. Esto permite reutilizar el código y cambiar solo la lógica de qué pokemones agregar en cada caso.
 
 <div align="center">
-<img width="70%" src="img/punterosafuncion.svg">
+<img width="70%" src="img/punterofuncion.svg">
 </div>
 
 Al principio, implementar las funciones de unión, intersección y diferencia me resultó desafiante, ya que mis primeras versiones recorrían las colecciones de forma anidada, resultando en una complejidad O(n^2). Notaba que intersección y diferencia compartían cierta lógica, pero unión parecía distinta, por lo que inicialmente las implementé por separado.
