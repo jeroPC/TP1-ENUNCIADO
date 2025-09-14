@@ -151,10 +151,11 @@ make -C TP1-ENUNCIADO clean
 
 
 ### 8. 'tp1_buscar_id'
-    Busca un pokemon dentro de tp1 cuyo campo id coincida exactamente con el valor pasado port parametro.
-    Recibe por parametros (tp1_t *tp) y un numero entero con el id a buscar (int id)
-    
-    Ya que se estan ordenados, gracias a la combinacion de una funcion auxiliar merge_srot con tp1_leer_archivo , aplico busqueda binaria , pasando estos parametros (tp1_t *tp, int id, size_t inicio, size_t fin) , asi logro obtener uan complejidad de O(log n),donde n es la cantidad de pokemones en tp1.
+
+Busca un pokemon dentro de tp1 cuyo campo id coincida exactamente con el valor pasado por parámetro.  
+Recibe por parámetros (tp1_t *tp) y un número entero con el id a buscar (int id).
+
+Ya que están ordenados, gracias a la combinación de una función auxiliar merge_sort con tp1_leer_archivo, aplico búsqueda binaria, pasando estos parámetros (tp1_t *tp, int id, size_t inicio, size_t fin), así logro obtener una complejidad de O(log n), donde n es la cantidad de pokemones en tp1.
 
 
 ### 9. 'tp1_con_cada_pokemon'
