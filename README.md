@@ -186,7 +186,10 @@ Ya que están ordenados, gracias a la combinación de una función auxiliar merg
 
 ---
 
-### 10. ' tp1_destruir'
-    Libera toda la memoria asociada al tp1, incluyendo el array dinámico de pokemones y los strings de nombre de cada pokémon.
-    Su complejidad es O(n), donde n es la cantidad de pokemones en el tp1.
+
+### 10. tp1_destruir
+
+La función 'tp1_destruir' se encarga de liberar toda la memoria asociada a la estructura tp1. Esto incluye tanto el array dinámico donde se almacenan los pokemones como los strings de nombre de cada pokémon, que también fueron reservados dinámicamente. De esta manera, se evita cualquier fuga de memoria al finalizar el uso de tp1.
+
+La complejidad de esta función es O(n), donde n es la cantidad de pokemones almacenados, ya que debe recorrer y liberar cada uno de los elementos.
 
