@@ -89,7 +89,7 @@ La función tp1_leer_archivo tiene complejidad O(n^2) en el peor caso, ya que po
 El manejo de memoria dinámica (con realloc) es amortizado O(n), pero no afecta el orden final de complejidad.
 
 <div align="center">
-<img width="70%" src="img/diagrama de flujo.svg">
+<img width="70%" src="img/leer_archi.svg.svg">
 </div>
 ---
 
