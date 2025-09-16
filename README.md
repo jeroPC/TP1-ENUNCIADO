@@ -88,6 +88,9 @@ El flujo es: abrir archivo → leer línea → parsear → crear 'struct pokemon
 La función tp1_leer_archivo tiene complejidad O(n^2) en el peor caso, ya que por cada pokémon leído se verifica si su id está repetido recorriendo toda la colección cargada hasta el momento.  
 El manejo de memoria dinámica (con realloc) es amortizado O(n), pero no afecta el orden final de complejidad.
 
+<div align="center">
+<img width="70%" src="img/diagrama de flujo.svg">
+</div>
 ---
 
 ### 2. 'tp1_cantidad'
