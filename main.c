@@ -63,7 +63,15 @@ static void mostrar_por_nombre(tp1_t *coleccion)
 	struct contexto_llenado ctx = { vector, 0 };
 	tp1_con_cada_pokemon(coleccion, callback_llenar_vector, &ctx);
 
-	qsort(vector, ctx.indice, sizeof(*vector), comparar_por_nombre);
+	for (size_t i = 0; i < ctx.indice; i++) {
+		for (size_t j = 0; j + 1 < ctx.indice - i; j++) {
+			if (comparar_por_nombre(&vector[j], &vector[j + 1]) > 0) {
+				struct pokemon *tmp = vector[j];
+				vector[j] = vector[j + 1];
+				vector[j + 1] = tmp;
+			}
+		}
+	}
 
 	for (size_t indice = 0; indice < ctx.indice; indice++)
 		imprimir_pokemon(vector[indice]);
